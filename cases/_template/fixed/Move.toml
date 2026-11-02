@@ -1,0 +1,3 @@
+[package]
+name = "case"
+edition = "2024"

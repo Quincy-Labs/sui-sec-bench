@@ -1,6 +1,6 @@
 # Corrections
 
-This replaces the earlier `INVENTORY`, `DISCREPANCIES`, `EXPLOIT-LADDER`, `CASE-AUDIT` and `VERDICT` docs, which contained unsupported claims. They're kept in `archive/2026-11-01-superseded/`, outside the release packages.
+This replaces the earlier `INVENTORY`, `DISCREPANCIES`, `EXPLOIT-LADDER`, `CASE-AUDIT` and `VERDICT` docs, which contained unsupported claims. They aren't part of this repo.
 
 | Earlier claim | Correction |
 | --- | --- |

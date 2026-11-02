@@ -86,13 +86,26 @@ def main() -> None:
     run_dir = sys.argv[1] if len(sys.argv) > 1 else "run2"
     out_name = sys.argv[2] if len(sys.argv) > 2 else "patch_regrade.json"
     cases = {c.id: c for c in load_cases(ROOT / "cases") if c.id in CASE_IDS}
+    missing = [cid for cid, c in cases.items() if not exploit_files(c)]
+    if missing or len(cases) != len(CASE_IDS):
+        raise SystemExit(
+            f"exploit tests missing for {missing or 'some cases'}; "
+            "regrading needs the restricted bundle. Nothing written."
+        )
+    run_files = sorted((ROOT / "results" / run_dir).glob("*__patch.json"))
+    runs = [json.loads(f.read_text()) for f in run_files]
+    # Some outputs are empty (token limit), but a run with no text at all was stripped.
+    if not runs or not any(o.get("raw") for r in runs for o in r["outputs"]):
+        raise SystemExit(
+            f"results/{run_dir} has no patch runs or no raw model outputs; "
+            "regrading needs the restricted bundle. Nothing written."
+        )
     references = {cid: check_reference(c) for cid, c in cases.items()}
     print(json.dumps(references, indent=1), flush=True)
     if not all(reference_ok(r) for r in references.values()):
         raise SystemExit("reference packages failed the v2 tests; nothing regraded")
     samples = []
-    for f in sorted((ROOT / "results" / run_dir).glob("*__patch.json")):
-        run = json.loads(f.read_text())
+    for run in runs:
         for o in run["outputs"]:
             grade = regrade_sample(cases[o["case"]], o.get("raw") or "")
             samples.append(

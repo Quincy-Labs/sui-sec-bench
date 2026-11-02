@@ -183,9 +183,10 @@ def grade_patch(case: Case, raw: str, sample: dict) -> dict:
             exploit_blocked: bool | None = not exp.passed
         else:
             exp = None
-            exploit_blocked = None  # owner task outstanding; grade on functional + build only
+            exploit_blocked = None  # exploit tests withheld; can't confirm the fix
     return {
-        "correct": func.passed and exploit_blocked is not False,
+        "correct": func.passed and exploit_blocked is True,
+        "incomplete": exploit_blocked is None,
         "functional_ok": func.passed,
         "functional_phase": func.phase,
         "exploit_blocked": exploit_blocked,

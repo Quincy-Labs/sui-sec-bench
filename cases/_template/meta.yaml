@@ -1,0 +1,15 @@
+id: SSB-XXXX
+title: ""                 # neutral, no hint about the bug
+source: audit             # audit | incident | clean
+reference: ""             # link to public report or post-mortem
+auditor: ""               # audit cases only
+report_date: "YYYY-MM"
+severity: high            # critical | high | none
+bug_class: ""             # key from docs/TAXONOMY.md
+bug_location: "module::function"
+contamination_risk: low   # low | medium | high
+tasks: [detect, patch, exploit]
+sui_version: ""
+license_note: ""
+reviewers: []
+added: "YYYY-MM-DD"
