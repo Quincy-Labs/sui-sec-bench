@@ -1,6 +1,6 @@
 # Responsible use
 
-- Every case is based on a bug that is already public and fixed.
+- Every case is based on a bug that is already public and fixed upstream: OtterSec's reports mark both audit findings resolved with patch commits, and Cetus's public math library contains the corrected overflow check.
 - Exploit tests run only in the local Move test framework. Nothing in this repo
   connects to a live network.
 - Do not use this benchmark, its tests, or model outputs against deployed

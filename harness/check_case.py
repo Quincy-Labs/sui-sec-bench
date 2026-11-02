@@ -8,7 +8,8 @@ Checks:
 - meta.yaml has all required fields; reviewers accepts [self] before v1.0.
 - Functional tests pass on both vulnerable/ and fixed/.
 - The exploit test passes on vulnerable/ and fails on fixed/. When tests/exploit/
-  has no test yet, the check is skipped and reported as an owner task, not an error.
+  has no test (not written yet, or withheld from the public repo), the check is
+  skipped and reported, not treated as an error.
 - No leak terms in any file the model sees (sources and prompt).
 - Warns when the installed Sui CLI differs from meta sui_version.
 """
@@ -79,7 +80,7 @@ def check_case(case: Case) -> list[str]:
             errors.append("clean case should not have an exploit test")
     elif not list(expl.glob("*.move")):
         if "exploit" in meta.get("tasks", []):
-            print("[SKIP] exploit test missing (owner task)")
+            print("[SKIP] no exploit test (withheld in the public repo); exploit check not run")
     else:
         checks += [
             ("exploit on vulnerable (must pass)", case.path / "vulnerable", [expl], True),
@@ -122,6 +123,10 @@ def main() -> int:
             print(f"== {c.id} FAIL")
             for e in errors:
                 print("ERROR:", e)
+        elif "exploit" in c.meta.get("tasks", []) and not list(
+            (c.path / "tests" / "exploit").glob("*.move")
+        ):
+            print(f"== {c.id} PASS (functional and build only; exploit check not run)")
         else:
             print(f"== {c.id} PASS")
     return 1 if failed else 0

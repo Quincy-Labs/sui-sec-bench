@@ -112,6 +112,7 @@ On SSB-0001, the four models that solved agentic mode on iteration 1 (flint, gpt
 - **Token limit:** with thinking on, reasoning counts toward the 32,768-token limit. Samples that reach it return no answer and score as misses, so qwen3.8's patch score reflects this limit as well as its ability.
 - **Serving error:** one devstral detect sample on SSB-0002 was an HTTP 400 model-load failure and counts as a miss.
 - **Contamination:** all three cases come from public material. SSB-0001 is marked high risk. The identifier `get_delta_a` in that case is, to our recollection, the original Cetus name. Renaming doesn't rule out training exposure.
+- **No longer blind:** these three cases and their fixes are now public, so future models may train on them. Scores from later runs on these cases aren't comparable with these results.
 - **Detect taxonomy:** a bug can reasonably fit more than one class, and the strict score penalizes that.
 - **Leak scan:** `scripts/leak_check.py --all` finds no leak terms in model-visible files, but it can't detect subtler hints in the code.
 - **Extended tests:** `tests_v2` was written after the run and checked against the reference packages. It adds a driver-before-window functional test to SSB-0002, and short-key and threshold exploits to SSB-0003.
