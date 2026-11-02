@@ -1,0 +1,29 @@
+[project]
+name = "sui-sec-bench"
+version = "0.1.0"
+description = "Open benchmark for AI detection, patching, and exploitation of Sui Move vulnerabilities"
+requires-python = ">=3.11"
+dependencies = [
+    "pyyaml>=6.0",
+    "requests>=2.31",
+    "openai>=1.50",
+    "anthropic>=0.40",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.5",
+]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["harness"]
+
+[tool.ruff.format]
+quote-style = "double"

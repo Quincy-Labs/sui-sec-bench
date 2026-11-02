@@ -1,0 +1,19 @@
+id: SSB-0001
+title: "Position sizing in a price-interval AMM"
+source: incident
+reference: "https://cetusprotocol.notion.site/Cetus-Incident-Report-May-22-2025-Attack-Disclosure-1ff1dbf3ac8680d7a98de6158597d416"
+auditor: "Cetus (self-disclosed incident report)"
+report_date: "2025-05"
+severity: critical
+bug_class: arithmetic
+bug_location: "math::scale"
+contamination_risk: high
+tasks:
+- detect
+- patch
+- exploit
+sui_version: 1.82.3
+license_note: "Minimal standalone rewrite. The pattern is taken from the public incident report and the public fix commits of the upstream math library. No upstream code is copied."
+reviewers: [self]
+added: "2026-10-28"
+leak_terms: [cetus, integer-mate, overflow, truncat, clmm, concentrated]

@@ -1,0 +1,140 @@
+{
+ "run_id": "detect-1793396588-e8de2b",
+ "model": "lmstudio:qwen/qwen3.8-27b",
+ "task": "detect",
+ "samples": 3,
+ "thinking": null,
+ "max_tokens": 32768,
+ "started_at": "2026-10-30T21:43:08+00:00",
+ "outputs": [
+  {
+   "task": "detect",
+   "model": "lmstudio:qwen/qwen3.8-27b",
+   "case": "SSB-0001",
+   "sample": 0,
+   "latency_s": 156.58,
+   "prompt_tokens": 635,
+   "completion_tokens": 3359,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-10-30T21:45:45+00:00",
+   "grade": {
+    "correct": true,
+    "lenient": true,
+    "class_ok": true,
+    "location_ok": true,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:qwen/qwen3.8-27b",
+   "case": "SSB-0001",
+   "sample": 1,
+   "latency_s": 293.81,
+   "prompt_tokens": 635,
+   "completion_tokens": 7649,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-10-30T21:50:38+00:00",
+   "grade": {
+    "correct": true,
+    "lenient": true,
+    "class_ok": true,
+    "location_ok": true,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:qwen/qwen3.8-27b",
+   "case": "SSB-0001",
+   "sample": 2,
+   "latency_s": 295.34,
+   "prompt_tokens": 635,
+   "completion_tokens": 7773,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-10-30T21:55:34+00:00",
+   "grade": {
+    "correct": true,
+    "lenient": true,
+    "class_ok": true,
+    "location_ok": true,
+    "found": true
+   }
+  }
+ ],
+ "finished_at": "2026-10-30T21:55:34+00:00",
+ "summary": {
+  "task": "detect",
+  "model": "lmstudio:qwen/qwen3.8-27b",
+  "cases": 1,
+  "samples_total": 3,
+  "strict": {
+   "cases": 1,
+   "samples": 3,
+   "best_at_k": 1.0,
+   "mean": 1.0
+  },
+  "lenient": {
+   "cases": 1,
+   "samples": 3,
+   "best_at_k": 1.0,
+   "mean": 1.0
+  },
+  "splits": {
+   "incident": {
+    "strict": {
+     "cases": 1,
+     "samples": 3,
+     "best_at_k": 1.0,
+     "mean": 1.0
+    },
+    "lenient": {
+     "cases": 1,
+     "samples": 3,
+     "best_at_k": 1.0,
+     "mean": 1.0
+    }
+   },
+   "audit": {
+    "strict": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    },
+    "lenient": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    }
+   },
+   "clean": {
+    "strict": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    },
+    "lenient": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    }
+   }
+  },
+  "false_positive_rate": null,
+  "per_case": {
+   "SSB-0001": {
+    "source": "incident",
+    "n_samples": 3,
+    "correct_any": true,
+    "lenient_any": true
+   }
+  }
+ }
+}

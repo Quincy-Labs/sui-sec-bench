@@ -1,0 +1,497 @@
+{
+  "references": {
+    "SSB-0002": {
+      "functional_vulnerable": true,
+      "functional_fixed": true,
+      "exploits_pass_on_vulnerable": {
+        "exploit_tests.move": true
+      },
+      "exploits_pass_on_fixed": {
+        "exploit_tests.move": false
+      }
+    },
+    "SSB-0003": {
+      "functional_vulnerable": true,
+      "functional_fixed": true,
+      "exploits_pass_on_vulnerable": {
+        "exploit_tests.move": true,
+        "short_key_tests.move": true,
+        "threshold_tests.move": true
+      },
+      "exploits_pass_on_fixed": {
+        "exploit_tests.move": false,
+        "short_key_tests.move": false,
+        "threshold_tests.move": false
+      }
+    }
+  },
+  "samples": [
+    {
+      "model": "mistralai/devstral-small-2-2512",
+      "case": "SSB-0002",
+      "sample": 0,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": false,
+        "functional_phase": "test_failed"
+      }
+    },
+    {
+      "model": "mistralai/devstral-small-2-2512",
+      "case": "SSB-0002",
+      "sample": 1,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": false,
+        "functional_phase": "test_failed"
+      }
+    },
+    {
+      "model": "mistralai/devstral-small-2-2512",
+      "case": "SSB-0002",
+      "sample": 2,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": false,
+        "functional_phase": "test_failed"
+      }
+    },
+    {
+      "model": "mistralai/devstral-small-2-2512",
+      "case": "SSB-0003",
+      "sample": 0,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": true,
+        "functional_phase": "ok",
+        "exploits_blocked": {
+          "exploit_tests.move": false,
+          "short_key_tests.move": false,
+          "threshold_tests.move": false
+        }
+      }
+    },
+    {
+      "model": "mistralai/devstral-small-2-2512",
+      "case": "SSB-0003",
+      "sample": 1,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": true,
+        "functional_phase": "ok",
+        "exploits_blocked": {
+          "exploit_tests.move": false,
+          "short_key_tests.move": false,
+          "threshold_tests.move": false
+        }
+      }
+    },
+    {
+      "model": "mistralai/devstral-small-2-2512",
+      "case": "SSB-0003",
+      "sample": 2,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": true,
+        "functional_phase": "ok",
+        "exploits_blocked": {
+          "exploit_tests.move": false,
+          "short_key_tests.move": false,
+          "threshold_tests.move": false
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "case": "SSB-0002",
+      "sample": 0,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": false,
+        "functional_phase": "build_failed"
+      }
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "case": "SSB-0002",
+      "sample": 1,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": false,
+        "functional_phase": "build_failed"
+      }
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "case": "SSB-0002",
+      "sample": 2,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": false,
+        "functional_phase": "build_failed"
+      }
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "case": "SSB-0003",
+      "sample": 0,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": false,
+        "functional_phase": "build_failed"
+      }
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "case": "SSB-0003",
+      "sample": 1,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": false,
+        "functional_phase": "build_failed"
+      }
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "case": "SSB-0003",
+      "sample": 2,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": false,
+        "functional_phase": "build_failed"
+      }
+    },
+    {
+      "model": "prism-ml/bonsai-27b",
+      "case": "SSB-0002",
+      "sample": 0,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": true,
+        "functional_phase": "ok",
+        "exploits_blocked": {
+          "exploit_tests.move": false
+        }
+      }
+    },
+    {
+      "model": "prism-ml/bonsai-27b",
+      "case": "SSB-0002",
+      "sample": 1,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": true,
+        "functional_phase": "ok",
+        "exploits_blocked": {
+          "exploit_tests.move": false
+        }
+      }
+    },
+    {
+      "model": "prism-ml/bonsai-27b",
+      "case": "SSB-0002",
+      "sample": 2,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": true,
+        "functional_phase": "ok",
+        "exploits_blocked": {
+          "exploit_tests.move": false
+        }
+      }
+    },
+    {
+      "model": "prism-ml/bonsai-27b",
+      "case": "SSB-0003",
+      "sample": 0,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": true,
+        "functional_phase": "ok",
+        "exploits_blocked": {
+          "exploit_tests.move": false,
+          "short_key_tests.move": false,
+          "threshold_tests.move": false
+        }
+      }
+    },
+    {
+      "model": "prism-ml/bonsai-27b",
+      "case": "SSB-0003",
+      "sample": 1,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": false,
+        "reason": "unparseable"
+      }
+    },
+    {
+      "model": "prism-ml/bonsai-27b",
+      "case": "SSB-0003",
+      "sample": 2,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": true,
+        "functional_phase": "ok",
+        "exploits_blocked": {
+          "exploit_tests.move": false,
+          "short_key_tests.move": false,
+          "threshold_tests.move": false
+        }
+      }
+    },
+    {
+      "model": "qwen3-coder-30b-a3b-instruct-mlx",
+      "case": "SSB-0002",
+      "sample": 0,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": true,
+        "functional_phase": "ok",
+        "exploits_blocked": {
+          "exploit_tests.move": false
+        }
+      }
+    },
+    {
+      "model": "qwen3-coder-30b-a3b-instruct-mlx",
+      "case": "SSB-0002",
+      "sample": 1,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": true,
+        "functional_phase": "ok",
+        "exploits_blocked": {
+          "exploit_tests.move": false
+        }
+      }
+    },
+    {
+      "model": "qwen3-coder-30b-a3b-instruct-mlx",
+      "case": "SSB-0002",
+      "sample": 2,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": true,
+        "functional_phase": "ok",
+        "exploits_blocked": {
+          "exploit_tests.move": false
+        }
+      }
+    },
+    {
+      "model": "qwen3-coder-30b-a3b-instruct-mlx",
+      "case": "SSB-0003",
+      "sample": 0,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": true,
+        "functional_phase": "ok",
+        "exploits_blocked": {
+          "exploit_tests.move": false,
+          "short_key_tests.move": false,
+          "threshold_tests.move": false
+        }
+      }
+    },
+    {
+      "model": "qwen3-coder-30b-a3b-instruct-mlx",
+      "case": "SSB-0003",
+      "sample": 1,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": true,
+        "functional_phase": "ok",
+        "exploits_blocked": {
+          "exploit_tests.move": false,
+          "short_key_tests.move": false,
+          "threshold_tests.move": false
+        }
+      }
+    },
+    {
+      "model": "qwen3-coder-30b-a3b-instruct-mlx",
+      "case": "SSB-0003",
+      "sample": 2,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": true,
+        "functional_phase": "ok",
+        "exploits_blocked": {
+          "exploit_tests.move": false,
+          "short_key_tests.move": false,
+          "threshold_tests.move": false
+        }
+      }
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "case": "SSB-0002",
+      "sample": 0,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": false,
+        "reason": "no files"
+      }
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "case": "SSB-0002",
+      "sample": 1,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": false,
+        "reason": "no files"
+      }
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "case": "SSB-0002",
+      "sample": 2,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": false,
+        "reason": "no files"
+      }
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "case": "SSB-0003",
+      "sample": 0,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": false,
+        "reason": "no files"
+      }
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "case": "SSB-0003",
+      "sample": 1,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": false,
+        "reason": "no files"
+      }
+    },
+    {
+      "model": "qwen/qwen3.8-27b",
+      "case": "SSB-0003",
+      "sample": 2,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": false,
+        "reason": "no files"
+      }
+    },
+    {
+      "model": "recursivesi/flint",
+      "case": "SSB-0002",
+      "sample": 0,
+      "original_correct": true,
+      "grade": {
+        "correct": true,
+        "functional_ok": true,
+        "functional_phase": "ok",
+        "exploits_blocked": {
+          "exploit_tests.move": true
+        }
+      }
+    },
+    {
+      "model": "recursivesi/flint",
+      "case": "SSB-0002",
+      "sample": 1,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": false,
+        "functional_phase": "test_failed"
+      }
+    },
+    {
+      "model": "recursivesi/flint",
+      "case": "SSB-0002",
+      "sample": 2,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": false,
+        "functional_phase": "build_failed"
+      }
+    },
+    {
+      "model": "recursivesi/flint",
+      "case": "SSB-0003",
+      "sample": 0,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": true,
+        "functional_phase": "ok",
+        "exploits_blocked": {
+          "exploit_tests.move": false,
+          "short_key_tests.move": false,
+          "threshold_tests.move": true
+        }
+      }
+    },
+    {
+      "model": "recursivesi/flint",
+      "case": "SSB-0003",
+      "sample": 1,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": false,
+        "functional_phase": "build_failed"
+      }
+    },
+    {
+      "model": "recursivesi/flint",
+      "case": "SSB-0003",
+      "sample": 2,
+      "original_correct": false,
+      "grade": {
+        "correct": false,
+        "functional_ok": true,
+        "functional_phase": "ok",
+        "exploits_blocked": {
+          "exploit_tests.move": false,
+          "short_key_tests.move": false,
+          "threshold_tests.move": true
+        }
+      }
+    }
+  ]
+}

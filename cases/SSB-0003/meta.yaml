@@ -1,0 +1,19 @@
+id: SSB-0003
+title: "Validator set registration in a consortium registry"
+source: audit
+reference: "https://osec.io/reports/1ad84d4e-4146-8099-ab41-f731701b420c"
+auditor: "OtterSec"
+report_date: "2025-02"
+severity: low
+bug_class: input-validation
+bug_location: "consortium::configure_validator_set"
+contamination_risk: low
+tasks:
+- detect
+- patch
+- exploit
+sui_version: 1.82.3
+license_note: "Minimal standalone rewrite of a validator-set registry. The pattern (a configuration path that skips key-format, duplicate, and threshold checks) is taken from public audit finding OS-LSI-ADV-02. No upstream code is copied."
+reviewers: [self]
+added: "2026-10-31"
+leak_terms: [lombard, ottersec, bascule, lbtc, os-lsi]

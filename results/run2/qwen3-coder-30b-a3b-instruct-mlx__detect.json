@@ -1,0 +1,205 @@
+{
+ "run_id": "detect-1793544135-a5ee26",
+ "model": "lmstudio:qwen3-coder-30b-a3b-instruct-mlx",
+ "task": "detect",
+ "samples": 3,
+ "agentic": false,
+ "iters": null,
+ "thinking": null,
+ "max_tokens": 32768,
+ "started_at": "2026-11-01T14:42:15+00:00",
+ "outputs": [
+  {
+   "task": "detect",
+   "model": "lmstudio:qwen3-coder-30b-a3b-instruct-mlx",
+   "case": "SSB-0002",
+   "sample": 0,
+   "latency_s": 9.04,
+   "prompt_tokens": 901,
+   "completion_tokens": 115,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T14:42:24+00:00",
+   "grade": {
+    "correct": true,
+    "lenient": true,
+    "class_ok": true,
+    "location_ok": true,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:qwen3-coder-30b-a3b-instruct-mlx",
+   "case": "SSB-0002",
+   "sample": 1,
+   "latency_s": 1.04,
+   "prompt_tokens": 901,
+   "completion_tokens": 110,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T14:42:25+00:00",
+   "grade": {
+    "correct": true,
+    "lenient": true,
+    "class_ok": true,
+    "location_ok": true,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:qwen3-coder-30b-a3b-instruct-mlx",
+   "case": "SSB-0002",
+   "sample": 2,
+   "latency_s": 0.94,
+   "prompt_tokens": 901,
+   "completion_tokens": 100,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T14:42:26+00:00",
+   "grade": {
+    "correct": true,
+    "lenient": true,
+    "class_ok": true,
+    "location_ok": true,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:qwen3-coder-30b-a3b-instruct-mlx",
+   "case": "SSB-0003",
+   "sample": 0,
+   "latency_s": 1.53,
+   "prompt_tokens": 1003,
+   "completion_tokens": 96,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T14:42:27+00:00",
+   "grade": {
+    "correct": false,
+    "lenient": false,
+    "class_ok": false,
+    "location_ok": true,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:qwen3-coder-30b-a3b-instruct-mlx",
+   "case": "SSB-0003",
+   "sample": 1,
+   "latency_s": 0.92,
+   "prompt_tokens": 1003,
+   "completion_tokens": 90,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T14:42:28+00:00",
+   "grade": {
+    "correct": false,
+    "lenient": false,
+    "class_ok": false,
+    "location_ok": true,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:qwen3-coder-30b-a3b-instruct-mlx",
+   "case": "SSB-0003",
+   "sample": 2,
+   "latency_s": 0.86,
+   "prompt_tokens": 1003,
+   "completion_tokens": 90,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T14:42:29+00:00",
+   "grade": {
+    "correct": false,
+    "lenient": false,
+    "class_ok": false,
+    "location_ok": true,
+    "found": true
+   }
+  }
+ ],
+ "finished_at": "2026-11-01T14:42:29+00:00",
+ "summary": {
+  "task": "detect",
+  "model": "lmstudio:qwen3-coder-30b-a3b-instruct-mlx",
+  "cases": 2,
+  "samples_total": 6,
+  "strict": {
+   "cases": 2,
+   "samples": 6,
+   "best_at_k": 0.5,
+   "mean": 0.5
+  },
+  "lenient": {
+   "cases": 2,
+   "samples": 6,
+   "best_at_k": 0.5,
+   "mean": 0.5
+  },
+  "splits": {
+   "incident": {
+    "strict": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    },
+    "lenient": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    }
+   },
+   "audit": {
+    "strict": {
+     "cases": 2,
+     "samples": 6,
+     "best_at_k": 0.5,
+     "mean": 0.5
+    },
+    "lenient": {
+     "cases": 2,
+     "samples": 6,
+     "best_at_k": 0.5,
+     "mean": 0.5
+    }
+   },
+   "clean": {
+    "strict": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    },
+    "lenient": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    }
+   }
+  },
+  "false_positive_rate": null,
+  "per_case": {
+   "SSB-0002": {
+    "source": "audit",
+    "n_samples": 3,
+    "correct_any": true,
+    "lenient_any": true
+   },
+   "SSB-0003": {
+    "source": "audit",
+    "n_samples": 3,
+    "correct_any": false,
+    "lenient_any": false
+   }
+  }
+ }
+}

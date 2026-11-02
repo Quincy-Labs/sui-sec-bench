@@ -1,0 +1,219 @@
+{
+ "run_id": "patch-1793569596-3505ff",
+ "model": "lmstudio:prism-ml/bonsai-27b",
+ "task": "patch",
+ "samples": 3,
+ "agentic": false,
+ "iters": null,
+ "thinking": null,
+ "max_tokens": 32768,
+ "lmstudio_defaults": {
+  "preset": "",
+  "operation": {
+   "fields": [
+    {
+     "key": "ext.virtualModel.customField.prismMl.bonsai27b.enableThinking",
+     "value": true
+    }
+   ]
+  },
+  "load": {
+   "fields": []
+  }
+ },
+ "prompt_sha256": "4e4b2b6b05b5ca3dcba3d847197f8ab16c4ad3ff5c716b4c636d1644d63fdf26",
+ "started_at": "2026-11-01T21:46:36+00:00",
+ "outputs": [
+  {
+   "task": "patch",
+   "model": "lmstudio:prism-ml/bonsai-27b",
+   "case": "SSB-0002",
+   "sample": 0,
+   "latency_s": 1148.88,
+   "prompt_tokens": 932,
+   "completion_tokens": 32767,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T22:05:45+00:00",
+   "grade": {
+    "correct": false,
+    "functional_ok": false,
+    "exploit_blocked": null,
+    "reason": "empty"
+   }
+  },
+  {
+   "task": "patch",
+   "model": "lmstudio:prism-ml/bonsai-27b",
+   "case": "SSB-0002",
+   "sample": 1,
+   "latency_s": 46.44,
+   "prompt_tokens": 932,
+   "completion_tokens": 1516,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T22:06:31+00:00",
+   "grade": {
+    "correct": false,
+    "functional_ok": false,
+    "functional_phase": "test_failed",
+    "exploit_blocked": true,
+    "exploit_phase": "test_failed"
+   }
+  },
+  {
+   "task": "patch",
+   "model": "lmstudio:prism-ml/bonsai-27b",
+   "case": "SSB-0002",
+   "sample": 2,
+   "latency_s": 33.84,
+   "prompt_tokens": 932,
+   "completion_tokens": 1103,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T22:07:05+00:00",
+   "grade": {
+    "correct": true,
+    "functional_ok": true,
+    "functional_phase": "ok",
+    "exploit_blocked": true,
+    "exploit_phase": "test_failed"
+   }
+  },
+  {
+   "task": "patch",
+   "model": "lmstudio:prism-ml/bonsai-27b",
+   "case": "SSB-0003",
+   "sample": 0,
+   "latency_s": 53.18,
+   "prompt_tokens": 1048,
+   "completion_tokens": 1612,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T22:07:58+00:00",
+   "grade": {
+    "correct": false,
+    "functional_ok": false,
+    "functional_phase": "build_failed",
+    "exploit_blocked": true,
+    "exploit_phase": "build_failed"
+   }
+  },
+  {
+   "task": "patch",
+   "model": "lmstudio:prism-ml/bonsai-27b",
+   "case": "SSB-0003",
+   "sample": 1,
+   "latency_s": 157.7,
+   "prompt_tokens": 1048,
+   "completion_tokens": 5173,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T22:10:36+00:00",
+   "grade": {
+    "correct": false,
+    "functional_ok": false,
+    "functional_phase": "build_failed",
+    "exploit_blocked": true,
+    "exploit_phase": "build_failed"
+   }
+  },
+  {
+   "task": "patch",
+   "model": "lmstudio:prism-ml/bonsai-27b",
+   "case": "SSB-0003",
+   "sample": 2,
+   "latency_s": 71.87,
+   "prompt_tokens": 1048,
+   "completion_tokens": 2386,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T22:11:48+00:00",
+   "grade": {
+    "correct": false,
+    "functional_ok": true,
+    "functional_phase": "ok",
+    "exploit_blocked": false,
+    "exploit_phase": "ok"
+   }
+  }
+ ],
+ "finished_at": "2026-11-01T22:11:48+00:00",
+ "summary": {
+  "task": "patch",
+  "model": "lmstudio:prism-ml/bonsai-27b",
+  "cases": 2,
+  "samples_total": 6,
+  "strict": {
+   "cases": 2,
+   "samples": 6,
+   "best_at_k": 0.5,
+   "mean": 0.16666666666666666
+  },
+  "lenient": {
+   "cases": 2,
+   "samples": 6,
+   "best_at_k": 0.5,
+   "mean": 0.16666666666666666
+  },
+  "splits": {
+   "incident": {
+    "strict": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    },
+    "lenient": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    }
+   },
+   "audit": {
+    "strict": {
+     "cases": 2,
+     "samples": 6,
+     "best_at_k": 0.5,
+     "mean": 0.16666666666666666
+    },
+    "lenient": {
+     "cases": 2,
+     "samples": 6,
+     "best_at_k": 0.5,
+     "mean": 0.16666666666666666
+    }
+   },
+   "clean": {
+    "strict": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    },
+    "lenient": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    }
+   }
+  },
+  "false_positive_rate": null,
+  "per_case": {
+   "SSB-0002": {
+    "source": "audit",
+    "n_samples": 3,
+    "correct_any": true,
+    "lenient_any": true
+   },
+   "SSB-0003": {
+    "source": "audit",
+    "n_samples": 3,
+    "correct_any": false,
+    "lenient_any": false
+   }
+  }
+ }
+}

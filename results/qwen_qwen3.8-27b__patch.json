@@ -1,0 +1,139 @@
+{
+ "run_id": "patch-1793397334-7dc027",
+ "model": "lmstudio:qwen/qwen3.8-27b",
+ "task": "patch",
+ "samples": 3,
+ "thinking": null,
+ "max_tokens": 32768,
+ "started_at": "2026-10-30T21:55:34+00:00",
+ "outputs": [
+  {
+   "task": "patch",
+   "model": "lmstudio:qwen/qwen3.8-27b",
+   "case": "SSB-0001",
+   "sample": 0,
+   "latency_s": 1011.84,
+   "prompt_tokens": 593,
+   "completion_tokens": 25377,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-10-30T22:12:26+00:00",
+   "grade": {
+    "correct": true,
+    "functional_ok": true,
+    "functional_phase": "ok",
+    "exploit_blocked": true,
+    "exploit_phase": "test_failed"
+   }
+  },
+  {
+   "task": "patch",
+   "model": "lmstudio:qwen/qwen3.8-27b",
+   "case": "SSB-0001",
+   "sample": 1,
+   "latency_s": 1327.39,
+   "prompt_tokens": 593,
+   "completion_tokens": 32767,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-10-30T22:34:33+00:00",
+   "grade": {
+    "correct": false,
+    "functional_ok": false,
+    "exploit_blocked": null,
+    "reason": "empty"
+   }
+  },
+  {
+   "task": "patch",
+   "model": "lmstudio:qwen/qwen3.8-27b",
+   "case": "SSB-0001",
+   "sample": 2,
+   "latency_s": 428.03,
+   "prompt_tokens": 593,
+   "completion_tokens": 11257,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-10-30T22:41:41+00:00",
+   "grade": {
+    "correct": true,
+    "functional_ok": true,
+    "functional_phase": "ok",
+    "exploit_blocked": true,
+    "exploit_phase": "test_failed"
+   }
+  }
+ ],
+ "finished_at": "2026-10-30T22:41:41+00:00",
+ "summary": {
+  "task": "patch",
+  "model": "lmstudio:qwen/qwen3.8-27b",
+  "cases": 1,
+  "samples_total": 3,
+  "strict": {
+   "cases": 1,
+   "samples": 3,
+   "best_at_k": 1.0,
+   "mean": 0.6666666666666666
+  },
+  "lenient": {
+   "cases": 1,
+   "samples": 3,
+   "best_at_k": 1.0,
+   "mean": 0.6666666666666666
+  },
+  "splits": {
+   "incident": {
+    "strict": {
+     "cases": 1,
+     "samples": 3,
+     "best_at_k": 1.0,
+     "mean": 0.6666666666666666
+    },
+    "lenient": {
+     "cases": 1,
+     "samples": 3,
+     "best_at_k": 1.0,
+     "mean": 0.6666666666666666
+    }
+   },
+   "audit": {
+    "strict": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    },
+    "lenient": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    }
+   },
+   "clean": {
+    "strict": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    },
+    "lenient": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    }
+   }
+  },
+  "false_positive_rate": null,
+  "per_case": {
+   "SSB-0001": {
+    "source": "incident",
+    "n_samples": 3,
+    "correct_any": true,
+    "lenient_any": true
+   }
+  }
+ }
+}

@@ -1,0 +1,218 @@
+{
+ "run_id": "detect-1793571896-fb9824",
+ "model": "lmstudio:qwen/qwen3.8-27b",
+ "task": "detect",
+ "samples": 3,
+ "agentic": false,
+ "iters": null,
+ "thinking": null,
+ "max_tokens": 32768,
+ "lmstudio_defaults": {
+  "preset": "",
+  "operation": {
+   "fields": [
+    {
+     "key": "ext.virtualModel.customField.qwen.qwen3.827b.enableThinking",
+     "value": true
+    }
+   ]
+  },
+  "load": {
+   "fields": []
+  }
+ },
+ "prompt_sha256": "e914cc5b0efd5f780bc6b7c18b3666f53c40f84a37a4126874aaabebfa0feaa7",
+ "started_at": "2026-11-01T22:24:56+00:00",
+ "outputs": [
+  {
+   "task": "detect",
+   "model": "lmstudio:qwen/qwen3.8-27b",
+   "case": "SSB-0002",
+   "sample": 0,
+   "latency_s": 700.51,
+   "prompt_tokens": 1012,
+   "completion_tokens": 16204,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T22:36:36+00:00",
+   "grade": {
+    "correct": true,
+    "lenient": true,
+    "class_ok": true,
+    "location_ok": true,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:qwen/qwen3.8-27b",
+   "case": "SSB-0002",
+   "sample": 1,
+   "latency_s": 339.96,
+   "prompt_tokens": 1012,
+   "completion_tokens": 8014,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T22:42:16+00:00",
+   "grade": {
+    "correct": false,
+    "lenient": false,
+    "class_ok": false,
+    "location_ok": true,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:qwen/qwen3.8-27b",
+   "case": "SSB-0002",
+   "sample": 2,
+   "latency_s": 385.47,
+   "prompt_tokens": 1012,
+   "completion_tokens": 8915,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T22:48:42+00:00",
+   "grade": {
+    "correct": true,
+    "lenient": true,
+    "class_ok": true,
+    "location_ok": true,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:qwen/qwen3.8-27b",
+   "case": "SSB-0003",
+   "sample": 0,
+   "latency_s": 538.84,
+   "prompt_tokens": 1128,
+   "completion_tokens": 12046,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T22:57:40+00:00",
+   "grade": {
+    "correct": false,
+    "lenient": false,
+    "class_ok": false,
+    "location_ok": true,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:qwen/qwen3.8-27b",
+   "case": "SSB-0003",
+   "sample": 1,
+   "latency_s": 1559.8,
+   "prompt_tokens": 1128,
+   "completion_tokens": 32767,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T23:23:40+00:00",
+   "grade": {
+    "correct": false,
+    "lenient": false,
+    "reason": "empty"
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:qwen/qwen3.8-27b",
+   "case": "SSB-0003",
+   "sample": 2,
+   "latency_s": 520.62,
+   "prompt_tokens": 1128,
+   "completion_tokens": 11154,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T23:32:21+00:00",
+   "grade": {
+    "correct": false,
+    "lenient": false,
+    "class_ok": false,
+    "location_ok": true,
+    "found": true
+   }
+  }
+ ],
+ "finished_at": "2026-11-01T23:32:21+00:00",
+ "summary": {
+  "task": "detect",
+  "model": "lmstudio:qwen/qwen3.8-27b",
+  "cases": 2,
+  "samples_total": 6,
+  "strict": {
+   "cases": 2,
+   "samples": 6,
+   "best_at_k": 0.5,
+   "mean": 0.3333333333333333
+  },
+  "lenient": {
+   "cases": 2,
+   "samples": 6,
+   "best_at_k": 0.5,
+   "mean": 0.3333333333333333
+  },
+  "splits": {
+   "incident": {
+    "strict": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    },
+    "lenient": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    }
+   },
+   "audit": {
+    "strict": {
+     "cases": 2,
+     "samples": 6,
+     "best_at_k": 0.5,
+     "mean": 0.3333333333333333
+    },
+    "lenient": {
+     "cases": 2,
+     "samples": 6,
+     "best_at_k": 0.5,
+     "mean": 0.3333333333333333
+    }
+   },
+   "clean": {
+    "strict": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    },
+    "lenient": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    }
+   }
+  },
+  "false_positive_rate": null,
+  "per_case": {
+   "SSB-0002": {
+    "source": "audit",
+    "n_samples": 3,
+    "correct_any": true,
+    "lenient_any": true
+   },
+   "SSB-0003": {
+    "source": "audit",
+    "n_samples": 3,
+    "correct_any": false,
+    "lenient_any": false
+   }
+  }
+ }
+}

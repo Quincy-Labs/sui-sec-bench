@@ -1,0 +1,203 @@
+{
+ "run_id": "detect-1793551194-966665",
+ "model": "lmstudio:mistralai/devstral-small-2-2512",
+ "task": "detect",
+ "samples": 3,
+ "agentic": false,
+ "iters": null,
+ "thinking": null,
+ "max_tokens": 32768,
+ "started_at": "2026-11-01T16:39:54+00:00",
+ "outputs": [
+  {
+   "task": "detect",
+   "model": "lmstudio:mistralai/devstral-small-2-2512",
+   "case": "SSB-0002",
+   "sample": 0,
+   "latency_s": 1.16,
+   "prompt_tokens": null,
+   "completion_tokens": null,
+   "cost_usd": null,
+   "error": "HTTP 400: {\n    \"error\": {\n        \"message\": \"Failed to load model \\\"mistralai/devstral-small-2-2512\\\". Error: Operation canceled.\",\n        \"type\": \"invalid_request_error\",\n        \"param\": \"model\",\n        \"code\": null\n    }\n}",
+   "timestamp": "2026-11-01T16:39:56+00:00",
+   "grade": {
+    "correct": false,
+    "lenient": false,
+    "reason": "empty"
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:mistralai/devstral-small-2-2512",
+   "case": "SSB-0002",
+   "sample": 1,
+   "latency_s": 11.69,
+   "prompt_tokens": 1071,
+   "completion_tokens": 76,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T16:40:07+00:00",
+   "grade": {
+    "correct": true,
+    "lenient": true,
+    "class_ok": true,
+    "location_ok": true,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:mistralai/devstral-small-2-2512",
+   "case": "SSB-0002",
+   "sample": 2,
+   "latency_s": 2.13,
+   "prompt_tokens": 1071,
+   "completion_tokens": 65,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T16:40:09+00:00",
+   "grade": {
+    "correct": true,
+    "lenient": true,
+    "class_ok": true,
+    "location_ok": true,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:mistralai/devstral-small-2-2512",
+   "case": "SSB-0003",
+   "sample": 0,
+   "latency_s": 7.66,
+   "prompt_tokens": 1193,
+   "completion_tokens": 73,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T16:40:17+00:00",
+   "grade": {
+    "correct": false,
+    "lenient": false,
+    "class_ok": false,
+    "location_ok": true,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:mistralai/devstral-small-2-2512",
+   "case": "SSB-0003",
+   "sample": 1,
+   "latency_s": 2.25,
+   "prompt_tokens": 1193,
+   "completion_tokens": 61,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T16:40:19+00:00",
+   "grade": {
+    "correct": false,
+    "lenient": false,
+    "class_ok": false,
+    "location_ok": true,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:mistralai/devstral-small-2-2512",
+   "case": "SSB-0003",
+   "sample": 2,
+   "latency_s": 2.16,
+   "prompt_tokens": 1193,
+   "completion_tokens": 61,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T16:40:22+00:00",
+   "grade": {
+    "correct": false,
+    "lenient": false,
+    "class_ok": false,
+    "location_ok": true,
+    "found": true
+   }
+  }
+ ],
+ "finished_at": "2026-11-01T16:40:22+00:00",
+ "summary": {
+  "task": "detect",
+  "model": "lmstudio:mistralai/devstral-small-2-2512",
+  "cases": 2,
+  "samples_total": 6,
+  "strict": {
+   "cases": 2,
+   "samples": 6,
+   "best_at_k": 0.5,
+   "mean": 0.3333333333333333
+  },
+  "lenient": {
+   "cases": 2,
+   "samples": 6,
+   "best_at_k": 0.5,
+   "mean": 0.3333333333333333
+  },
+  "splits": {
+   "incident": {
+    "strict": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    },
+    "lenient": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    }
+   },
+   "audit": {
+    "strict": {
+     "cases": 2,
+     "samples": 6,
+     "best_at_k": 0.5,
+     "mean": 0.3333333333333333
+    },
+    "lenient": {
+     "cases": 2,
+     "samples": 6,
+     "best_at_k": 0.5,
+     "mean": 0.3333333333333333
+    }
+   },
+   "clean": {
+    "strict": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    },
+    "lenient": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    }
+   }
+  },
+  "false_positive_rate": null,
+  "per_case": {
+   "SSB-0002": {
+    "source": "audit",
+    "n_samples": 3,
+    "correct_any": true,
+    "lenient_any": true
+   },
+   "SSB-0003": {
+    "source": "audit",
+    "n_samples": 3,
+    "correct_any": false,
+    "lenient_any": false
+   }
+  }
+ }
+}

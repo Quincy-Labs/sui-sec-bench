@@ -1,0 +1,140 @@
+{
+ "run_id": "detect-1793389634-128b33",
+ "model": "lmstudio:mistralai/devstral-small-2-2512",
+ "task": "detect",
+ "samples": 3,
+ "thinking": null,
+ "max_tokens": 32768,
+ "started_at": "2026-10-30T19:47:14+00:00",
+ "outputs": [
+  {
+   "task": "detect",
+   "model": "lmstudio:mistralai/devstral-small-2-2512",
+   "case": "SSB-0001",
+   "sample": 0,
+   "latency_s": 22.16,
+   "prompt_tokens": 649,
+   "completion_tokens": 67,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-10-30T19:47:36+00:00",
+   "grade": {
+    "correct": false,
+    "lenient": false,
+    "class_ok": true,
+    "location_ok": false,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:mistralai/devstral-small-2-2512",
+   "case": "SSB-0001",
+   "sample": 1,
+   "latency_s": 5.54,
+   "prompt_tokens": 649,
+   "completion_tokens": 64,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-10-30T19:47:41+00:00",
+   "grade": {
+    "correct": false,
+    "lenient": false,
+    "class_ok": true,
+    "location_ok": false,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:mistralai/devstral-small-2-2512",
+   "case": "SSB-0001",
+   "sample": 2,
+   "latency_s": 6.22,
+   "prompt_tokens": 649,
+   "completion_tokens": 72,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-10-30T19:47:48+00:00",
+   "grade": {
+    "correct": false,
+    "lenient": false,
+    "class_ok": true,
+    "location_ok": false,
+    "found": true
+   }
+  }
+ ],
+ "finished_at": "2026-10-30T19:47:48+00:00",
+ "summary": {
+  "task": "detect",
+  "model": "lmstudio:mistralai/devstral-small-2-2512",
+  "cases": 1,
+  "samples_total": 3,
+  "strict": {
+   "cases": 1,
+   "samples": 3,
+   "best_at_k": 0.0,
+   "mean": 0.0
+  },
+  "lenient": {
+   "cases": 1,
+   "samples": 3,
+   "best_at_k": 0.0,
+   "mean": 0.0
+  },
+  "splits": {
+   "incident": {
+    "strict": {
+     "cases": 1,
+     "samples": 3,
+     "best_at_k": 0.0,
+     "mean": 0.0
+    },
+    "lenient": {
+     "cases": 1,
+     "samples": 3,
+     "best_at_k": 0.0,
+     "mean": 0.0
+    }
+   },
+   "audit": {
+    "strict": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    },
+    "lenient": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    }
+   },
+   "clean": {
+    "strict": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    },
+    "lenient": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    }
+   }
+  },
+  "false_positive_rate": null,
+  "per_case": {
+   "SSB-0001": {
+    "source": "incident",
+    "n_samples": 3,
+    "correct_any": false,
+    "lenient_any": false
+   }
+  }
+ }
+}

@@ -1,0 +1,19 @@
+id: SSB-0002
+title: "Order settlement in a cross-chain auction"
+source: audit
+reference: "https://osec.io/reports/20684d4e-4146-80d0-9201-fe942bdb0260"
+auditor: "OtterSec"
+report_date: "2025-03"
+severity: high
+bug_class: access-control
+bug_location: "fulfill::prepare_fulfill_winner"
+contamination_risk: low
+tasks:
+- detect
+- patch
+- exploit
+sui_version: 1.82.3
+license_note: "Minimal standalone rewrite of an order-settlement path. The pattern (a sender check gated behind a time window) is taken from public audit finding OS-MSI-ADV-00. No upstream code is copied."
+reviewers: [self]
+added: "2026-10-31"
+leak_terms: [mayan, swift, wormhole, ottersec, os-msi]

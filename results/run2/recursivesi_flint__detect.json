@@ -1,0 +1,205 @@
+{
+ "run_id": "detect-1793551744-ab647d",
+ "model": "lmstudio:recursivesi/flint",
+ "task": "detect",
+ "samples": 3,
+ "agentic": false,
+ "iters": null,
+ "thinking": null,
+ "max_tokens": 32768,
+ "started_at": "2026-11-01T16:49:04+00:00",
+ "outputs": [
+  {
+   "task": "detect",
+   "model": "lmstudio:recursivesi/flint",
+   "case": "SSB-0002",
+   "sample": 0,
+   "latency_s": 76.88,
+   "prompt_tokens": 875,
+   "completion_tokens": 7179,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T16:50:21+00:00",
+   "grade": {
+    "correct": false,
+    "lenient": false,
+    "class_ok": false,
+    "location_ok": true,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:recursivesi/flint",
+   "case": "SSB-0002",
+   "sample": 1,
+   "latency_s": 77.05,
+   "prompt_tokens": 875,
+   "completion_tokens": 8202,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T16:51:38+00:00",
+   "grade": {
+    "correct": true,
+    "lenient": true,
+    "class_ok": true,
+    "location_ok": true,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:recursivesi/flint",
+   "case": "SSB-0002",
+   "sample": 2,
+   "latency_s": 81.64,
+   "prompt_tokens": 875,
+   "completion_tokens": 7757,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T16:53:00+00:00",
+   "grade": {
+    "correct": false,
+    "lenient": false,
+    "class_ok": false,
+    "location_ok": true,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:recursivesi/flint",
+   "case": "SSB-0003",
+   "sample": 0,
+   "latency_s": 40.65,
+   "prompt_tokens": 955,
+   "completion_tokens": 3745,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T16:53:40+00:00",
+   "grade": {
+    "correct": false,
+    "lenient": false,
+    "class_ok": false,
+    "location_ok": true,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:recursivesi/flint",
+   "case": "SSB-0003",
+   "sample": 1,
+   "latency_s": 37.97,
+   "prompt_tokens": 955,
+   "completion_tokens": 3589,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T16:54:18+00:00",
+   "grade": {
+    "correct": false,
+    "lenient": false,
+    "class_ok": false,
+    "location_ok": true,
+    "found": true
+   }
+  },
+  {
+   "task": "detect",
+   "model": "lmstudio:recursivesi/flint",
+   "case": "SSB-0003",
+   "sample": 2,
+   "latency_s": 73.33,
+   "prompt_tokens": 955,
+   "completion_tokens": 6786,
+   "cost_usd": 0.0,
+   "error": null,
+   "timestamp": "2026-11-01T16:55:32+00:00",
+   "grade": {
+    "correct": false,
+    "lenient": false,
+    "class_ok": false,
+    "location_ok": true,
+    "found": true
+   }
+  }
+ ],
+ "finished_at": "2026-11-01T16:55:32+00:00",
+ "summary": {
+  "task": "detect",
+  "model": "lmstudio:recursivesi/flint",
+  "cases": 2,
+  "samples_total": 6,
+  "strict": {
+   "cases": 2,
+   "samples": 6,
+   "best_at_k": 0.5,
+   "mean": 0.16666666666666666
+  },
+  "lenient": {
+   "cases": 2,
+   "samples": 6,
+   "best_at_k": 0.5,
+   "mean": 0.16666666666666666
+  },
+  "splits": {
+   "incident": {
+    "strict": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    },
+    "lenient": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    }
+   },
+   "audit": {
+    "strict": {
+     "cases": 2,
+     "samples": 6,
+     "best_at_k": 0.5,
+     "mean": 0.16666666666666666
+    },
+    "lenient": {
+     "cases": 2,
+     "samples": 6,
+     "best_at_k": 0.5,
+     "mean": 0.16666666666666666
+    }
+   },
+   "clean": {
+    "strict": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    },
+    "lenient": {
+     "cases": 0,
+     "samples": 0,
+     "best_at_k": null,
+     "mean": null
+    }
+   }
+  },
+  "false_positive_rate": null,
+  "per_case": {
+   "SSB-0002": {
+    "source": "audit",
+    "n_samples": 3,
+    "correct_any": true,
+    "lenient_any": true
+   },
+   "SSB-0003": {
+    "source": "audit",
+    "n_samples": 3,
+    "correct_any": false,
+    "lenient_any": false
+   }
+  }
+ }
+}
