@@ -7,5 +7,6 @@ A preliminary pilot that tests local LLMs on Sui Move security tasks: finding a 
 - Corrections to earlier drafts: [docs/review/CORRECTIONS.md](docs/review/CORRECTIONS.md)
 - Running it and adding a case: [docs/REPRODUCE.md](docs/REPRODUCE.md)
 - Responsible use: [docs/RESPONSIBLE_USE.md](docs/RESPONSIBLE_USE.md)
+- Contributing a case: [CONTRIBUTING.md](CONTRIBUTING.md)
 
 This repo holds grades without model outputs, and cases without exploit tests. You can rebuild the tables with `python3 leaderboard/build.py`. Regrading needs the restricted bundle, which isn't published here.

@@ -12,4 +12,5 @@ tasks: [detect, patch, exploit]
 sui_version: ""
 license_note: ""
 reviewers: []
+contributors: []          # people credited for this case
 added: "YYYY-MM-DD"

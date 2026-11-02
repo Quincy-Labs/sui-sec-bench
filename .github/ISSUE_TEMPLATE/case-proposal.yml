@@ -1,0 +1,56 @@
+name: Case proposal
+description: Suggest a public, already fixed Sui Move bug as a benchmark case.
+title: "Case proposal: "
+labels: ["case-proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Don't paste exploit code or unreported bugs.** This issue is public.
+        Report unreported bugs to the protocol's bug bounty first. To submit a full
+        case with an exploit test, email cases@quincylabs.org instead.
+  - type: input
+    id: source
+    attributes:
+      label: Public source link
+      description: Audit report, advisory or incident write-up.
+    validations:
+      required: true
+  - type: input
+    id: project
+    attributes:
+      label: Protocol or project name
+  - type: input
+    id: location
+    attributes:
+      label: Module and function
+      placeholder: module::function
+  - type: dropdown
+    id: bug_class
+    attributes:
+      label: Bug class
+      options:
+        - access-control
+        - arithmetic
+        - input-validation
+        - business-logic
+        - other
+  - type: checkboxes
+    id: public_fixed
+    attributes:
+      label: Is the bug public and fixed?
+      options:
+        - label: The bug is publicly disclosed and already fixed.
+          required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this a good test?
+      description: For example, a new bug class or a Sui-specific pattern.
+  - type: dropdown
+    id: willing
+    attributes:
+      label: Are you willing to write the full case privately?
+      options:
+        - "yes"
+        - "no"

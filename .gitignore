@@ -3,3 +3,21 @@ __pycache__/
 build/
 .venv/
 *.zip
+
+# Exploit tests are never published (restricted bundle only)
+cases/*/tests/exploit/*.move
+cases/*/tests_v2/exploit/*.move
+
+# Secrets and Sui CLI config
+.env
+.env.*
+*.keystore
+client.yaml
+*.pem
+
+# Local working files
+PUBLIC_RELEASE_AUDIT.md
+launch/
+site/
+.ruff_cache/
+.pytest_cache/
